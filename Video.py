@@ -1,5 +1,5 @@
 #   /// = know it          // = I'll be fine in it             / = Forgettable
-# from ctypes import HRESULT
+from ctypes import HRESULT
 
 #                            1: Python tutorial for beginners ///
 
@@ -202,3 +202,5 @@
 #     Num = int(input("Enter a number between 1 and 10: "))
 
 # print(f"Your number is {Num}.")
+
+print("Hello World")
