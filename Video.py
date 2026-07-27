@@ -1,5 +1,5 @@
 #   /// = know it          // = I'll be fine in it             / = Forgettable
-from ctypes import HRESULT
+# from ctypes import HRESULT
 
 #                            1: Python tutorial for beginners ///
 
