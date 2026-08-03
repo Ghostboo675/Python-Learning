@@ -1,8 +1,3 @@
-# day 1 introduction
-from ast import compare
-
-# day 2 variables
-
 # level 1
 print("Day 2: 30 Days of python programming")
 First_name = "Samuel"
@@ -27,3 +22,5 @@ print(type(is_true))
 print(type(best_years))
 print(len(First_name))
 print(len(Last_name))
+
+
