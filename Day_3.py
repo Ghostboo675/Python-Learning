@@ -68,9 +68,9 @@ print(type(length_of_float))
 print(f" 44 % 2 = {44 % 2} meaning 44 is even because it has 0 remainders so can be divided by 2")
 print(f" 33 % 2 = {33 % 2} meaning 33 is odd because it has a remainder of 1 so can't be divided by 2")
 
-day2_floor_answer = 7 // 3
-day2_floor_answer = int(day2_floor_answer)
-print(day2_floor_answer == 2.7)
+day3_floor_answer = 7 // 3
+day3_floor_answer = int(day3_floor_answer)
+print(day3_floor_answer == 2.7)
 
 print("10" == 10)
 
