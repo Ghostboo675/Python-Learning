@@ -32,3 +32,50 @@ print(f"Money remaining: {money_remaining}")
 print(f"Percent remaining: %{percent_remaining}")
 print(f"Percent spent: %{percent_spent}")
 print(f"Average expense: £{average_expense}")
+
+
+# Day 4 and 5 (Student Grade & Class Manager)
+
+students = ["Jack" , "James" , "Nate" , "Alexa" , "Maria"]
+print(f"Students:\n {students}")
+
+grades = [28 , 74 , 85 , 64 , 42]
+print(f"\nGrades:\n {grades}")#
+
+number_of_students = len(students)
+highest_grade = max(grades)
+lowest_grade = min(grades)
+average_grade = sum(grades) / len(grades)
+grade_range = (max(grades) - min(grades))
+print(f"\nNumber of Students: {number_of_students}") # 5
+print(f"Highest Grade: {highest_grade}") # 85
+print(f"Lowest Grade: {lowest_grade}") # 28
+print(f"Average Grade: {average_grade}") # 58.6
+print(f"Grade range: {grade_range}") # 57
+
+
+new_student_project = (input("\nEnter a new student's name: "))
+new_student_project = new_student_project.capitalize()
+new_student_grade = int(input("Enter their grade: "))
+
+students.append(new_student_project)
+grades.append(new_student_grade)
+
+number_of_students = len(students)
+highest_grade = max(grades)
+lowest_grade = min(grades)
+average_grade = sum(grades) / len(grades)
+grade_range = (max(grades) - min(grades))
+
+#Students: ["(new_student_project)" , "Jack" , "James" , "Nate" , "Alexa" , "Maria"]  Grade: [(new_student grade) , ]
+print("\n")
+print(students)
+print(grades)
+print(f"\nNumber of Students: {number_of_students}")
+print(f"Highest Grade: {highest_grade}")
+print(f"Lowest Grade: {lowest_grade}")
+print(f"Average Grade: {average_grade}")
+print(f"Grade range: {grade_range}")
+
+grades.sort()
+print(f"\nGrades from lowest to highest: {grades}")
