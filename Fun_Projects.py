@@ -79,3 +79,95 @@ print(f"Grade range: {grade_range}")
 
 grades.sort()
 print(f"\nGrades from lowest to highest: {grades}")
+
+
+# Day 6, 7 and 8 (Student Management System)
+
+student_1 = {
+    "Name": "Samuel" ,
+    "Age": 16 ,
+    "Country": "England" ,
+    "City": "Sheffield" ,
+    "Skills": ['Python' , 'Maths' , 'Physics'] ,
+    "Favourite Subject": "Computer Science"
+}
+print("\nStudent 1\n")
+print(f"Name: {student_1["Name"]}")
+print(f"Age: {student_1["Age"]}")
+print(f"Country: {student_1["Country"]}")
+print(f"City: {student_1["City"]}")
+print(f"Skills: {student_1["Skills"]}")
+print(f"Favourite Subject: {student_1["Favourite Subject"]}")
+
+print("\nUpdated Skills:")
+student_1["Skills"].append("Problem Solving")
+print(student_1["Skills"])
+print(f"Number of skills: {len(student_1["Skills"])}")
+
+student_2 = {
+    "Name": "James",
+    "Age": 17,
+    "Country": "England",
+    "City": "Manchester",
+    "Skills": ['Python', 'Football', 'Physics'],
+    "Favourite Subject": "Physics"
+}
+print("\nStudent 2\n")
+print(f"Name: {student_2["Name"]}")
+print(f"Age: {student_2["Age"]}")
+print(f"Country: {student_2["Country"]}")
+print(f"City: {student_2["City"]}")
+print(f"Skills: {student_2["Skills"]}")
+print(f"Favourite Subject: {student_2["Favourite Subject"]}")
+
+student_3 = {
+    "Name": "Alex",
+    "Age": 16,
+    "Country": "England",
+    "City": "Leeds",
+    "Skills": ['JavaScript', 'Maths', 'HTML'],
+    "Favourite Subject": "Maths"
+}
+print(f"\nStudent 3\n")
+print(f"Name: {student_3["Name"]}")
+print(f"Age: {student_3["Age"]}")
+print(f"Country: {student_3["Country"]}")
+print(f"City: {student_3["City"]}")
+print(f"Skills: {student_3["Skills"]}")
+print(f"Favourite Subject: {student_3["Favourite Subject"]}")
+
+print(f"\nAll Students\n")
+students = [student_1 , student_2 , student_3]
+print(students)
+
+print(f"\nFirst student:")
+print(student_1)
+
+print(f"\nFirst student's name:")
+print(f"{student_1["Name"]}")
+
+print(f"\nFirst student's skills:")
+print(f"{student_1["Skills"]}")
+
+print(f"\nDictionary Information\n")
+print("Students 1 keys:")
+print(f"{list(student_1.keys())}")
+
+print(f"\nStudent 1 values:")
+print(f"{list(student_1.values())}")
+
+print(f"\nStudent 3 after removing City:")
+student_3.pop("City")
+print(f"{student_3}")
+
+print(f"\nStudent 3 after adding City again:")
+student_3["City"] = "Birmingham"
+print(student_3)
+
+print(f"\nFinal Information\n")
+
+print(f"Number of students: {len(students)}")
+
+print(f"\nStudent 1: {student_1["Name"]}")
+print(f"Student 2: {student_2["Name"]}")
+print(f"Student 3: {student_3["Name"]}")
