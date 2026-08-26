@@ -171,3 +171,76 @@ print(f"Number of students: {len(students)}")
 print(f"\nStudent 1: {student_1["Name"]}")
 print(f"Student 2: {student_2["Name"]}")
 print(f"Student 3: {student_3["Name"]}")
+
+
+# Day 9 and 10 (Student Quiz Game)
+
+points = 0
+pro_name = input("Enter your name: ")
+pro_name = pro_name.capitalize()
+
+print(f"\nWelcome {pro_name}!")
+print("Answer the following questions.")
+print("Each question is worth 1 point.")
+
+print("\nQuestion 1\n")
+
+pro_question_code_lang = input("What programming language are you learning? ")
+if pro_question_code_lang.lower() == "python":
+    print("Correct!")
+    points += 1
+else:
+    print("Incorrect!")
+    print("The correct answer was Python.")
+
+print("\nQuestion 2\n")
+
+pro_question_math = (input("What is 10 + 5? "))
+if pro_question_math == "15":
+    print("Correct!")
+    points += 1
+else:
+    print("Incorrect!")
+    print("The correct answer was 15.")
+
+print("\nQuestion 3\n")
+
+pro_question_symbol = input("What symbol is used to create a comment in Python? ")
+if pro_question_symbol == "#":
+    print("Correct!")
+    points += 1
+else:
+    print("Incorrect!")
+    print("The correct answer was #.")
+
+print("\nQuestion 4\n")
+
+pro_question_loop = input("What keyword is used to create a loop over a list? ")
+if pro_question_loop.lower() == "for":
+    print("Correct!")
+    points += 1
+else:
+    print("Incorrect!")
+    print("The correct answer was for.")
+
+print("\nQuestion 5\n")
+
+pro_question_len = input("What does len() tell you? ")
+if pro_question_len.lower() == "length":
+    print("Correct!")
+    points += 1
+else:
+    print("Incorrect!")
+    print("The answer was length.")
+
+print(f"\nPlayer: {pro_name}")
+print(f"Score: {points}/5")
+print(f"Percentage: {float(points * 20)}%")
+if points == 5:
+    print("Excellent! You got everything correct!")
+elif points == 4 or points == 3:
+    print("Good job! You passed the quiz.")
+elif points == 2 or points == 1:
+    print("You got some questions correct. Keep practising.")
+elif points == 0:
+    print("You got 0 correct. Keep learning and try again!")
