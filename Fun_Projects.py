@@ -244,3 +244,55 @@ elif points == 2 or points == 1:
     print("You got some questions correct. Keep practising.")
 elif points == 0:
     print("You got 0 correct. Keep learning and try again!")
+
+
+# Day 1, 2, 3, 4, 5, 6, 7, 8, 9 and 10 (Project: Personal Study Tracker)
+
+name_pro_10 = input("Enter your name: ")
+name_pro_10 = name_pro_10.capitalize()
+age_pro_10 = input("Enter your age: ")
+country_pro_10 = input("Enter your country: ")
+country_pro_10 = country_pro_10.capitalize()
+city_pro_10 = input("Enter your city: ")
+city_pro_10 = city_pro_10.capitalize()
+
+print(f"\nWelcome {name_pro_10}!\n")
+
+first_subject_pro_10 = input("Enter your first subject: ")
+second_subject_pro_10 = input("Enter your second subject: ")
+third_subject_pro_10 = input("Enter your third subject: ")
+study_time_subject1_pro_10 = float(input(f"How many hours did you study {first_subject_pro_10}? "))
+study_time_subject2_pro_10 = float(input(f"How many hours did you study {second_subject_pro_10}? "))
+study_time_subject3_pro_10 = float(input(f"How many hours did you study {third_subject_pro_10}? "))
+
+student_pro_10 = {
+    "Student": name_pro_10 ,
+    "Age": age_pro_10 ,
+    "Country": country_pro_10 ,
+    "City": city_pro_10 ,
+    "Subjects": [first_subject_pro_10, second_subject_pro_10, third_subject_pro_10] ,
+    "Subject hours": [study_time_subject1_pro_10, study_time_subject2_pro_10, study_time_subject3_pro_10]
+}
+
+print(f"\nStudent: {student_pro_10["Student"]}")
+print(f"\nAge: {student_pro_10["Age"]}")
+print(f"\nCountry: {student_pro_10["Country"]}")
+print(f"\nCity: {student_pro_10["City"]}\n")
+
+print("Subjects:")
+print(f"- {student_pro_10["Subjects"][0]}")
+print(f"- {student_pro_10["Subjects"][1]}")
+print(f"- {student_pro_10["Subjects"][2]}\n")
+
+print("Study hours:")
+print(f"{student_pro_10["Subjects"][0]}: {student_pro_10["Subject hours"][0]}")
+print(f"{student_pro_10["Subjects"][1]}: {student_pro_10["Subject hours"][1]}")
+print(f"{student_pro_10["Subjects"][2]}: {student_pro_10["Subject hours"][2]}\n")
+
+print(f"Total study time: {student_pro_10["Subject hours"][0] + student_pro_10["Subject hours"][1] + student_pro_10["Subject hours"][2]}")
+print(f"Average study time: {(float(student_pro_10["Subject hours"][0]) + float(student_pro_10["Subject hours"][1]) + float(student_pro_10["Subject hours"][2])) / 3}")
+print(f"Longest session: {max(student_pro_10["Subject hours"])}")
+print(f"Shortest session: {min(student_pro_10["Subject hours"])}")
+print(f"Study range: {float(max(student_pro_10["Subject hours"])) - float(min(student_pro_10["Subject hours"]))}\n")
+
+print("Unique subjects:")
