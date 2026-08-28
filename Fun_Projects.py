@@ -295,4 +295,44 @@ print(f"Longest session: {max(student_pro_10["Subject hours"])}")
 print(f"Shortest session: {min(student_pro_10["Subject hours"])}")
 print(f"Study range: {float(max(student_pro_10["Subject hours"])) - float(min(student_pro_10["Subject hours"]))}\n")
 
-print("Unique subjects:")
+print("Subjects:")
+print(f"- {first_subject_pro_10}")
+print(f"- {second_subject_pro_10}")
+print(f"- {third_subject_pro_10}\n")
+
+print("Study days:")
+print("- Monday")
+print("- Tuesday")
+print("- Wednesday\n")
+
+study_time_all_subs_pro_10 = float(study_time_subject1_pro_10) + float(study_time_subject2_pro_10) + float(study_time_subject3_pro_10)
+study_level_pro_10 = "nothing"
+
+if study_time_all_subs_pro_10 == 0:
+    print("You didn't study today")
+    print(f"Study level: Low")
+    study_level_pro_10 = "Low"
+elif study_time_all_subs_pro_10 >= 1 and study_time_all_subs_pro_10 < 3:
+    print("You did some studying, but you could do more.")
+    print("Study level: Low")
+    study_level_pro_10 = "Low"
+elif study_time_all_subs_pro_10 >= 3 and study_time_all_subs_pro_10 > 4:
+    print("Good job! You had a productive study session.")
+    print("Study level: Medium")
+    study_level_pro_10 = "Medium"
+elif study_time_all_subs_pro_10 >= 4 and study_time_all_subs_pro_10 > 6:
+    print("Excellent! You studied a lot today.")
+    print("Study level: Medium")
+    study_level_pro_10 = "Medium"
+elif study_time_all_subs_pro_10 >= 6:
+    print("Excellent! You studied a lot today.")
+    print("Study level: High")
+    study_level_pro_10 = "High"
+
+print(f"\nStudent: {name_pro_10}")
+print(f"Number of subjects: {len(student_pro_10["Subjects"])}")
+print(f"Total hours: {student_pro_10["Subject hours"][0] + student_pro_10["Subject hours"][1] + student_pro_10["Subject hours"][2]}")
+print(f"Average hours: {(float(student_pro_10["Subject hours"][0]) + float(student_pro_10["Subject hours"][1]) + float(student_pro_10["Subject hours"][2])) / 3}")
+print(f"Highest session: {max(student_pro_10["Subject hours"])}")
+print(f"Lowest session: {min(student_pro_10["Subject hours"])}")
+print(f"Study level: {study_level_pro_10}")
