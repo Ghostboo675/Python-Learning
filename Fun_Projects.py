@@ -336,3 +336,37 @@ print(f"Average hours: {(float(student_pro_10["Subject hours"][0]) + float(stude
 print(f"Highest session: {max(student_pro_10["Subject hours"])}")
 print(f"Lowest session: {min(student_pro_10["Subject hours"])}")
 print(f"Study level: {study_level_pro_10}")
+
+# Weaknesses Right now (Project: Student Study Challenge)
+
+pro_weak_name = input("Enter your name: ")
+pro_weak_name = pro_weak_name.capitalize()
+
+pro_weak_subject1 = input("Enter first subject: ")
+pro_weak_subject1 = pro_weak_subject1.capitalize()
+pro_weak_subject2 = input("Enter second subject: ")
+pro_weak_subject2 = pro_weak_subject2.capitalize()
+pro_weak_subject3 = input("Enter third subject: ")
+pro_weak_subject3 = pro_weak_subject3.capitalize()
+
+pro_weak_subject1_hour = float(input(f"Enter study time (hours) for {pro_weak_subject1}: "))
+pro_weak_subject2_hour = float(input(f"Enter study time (hours) for {pro_weak_subject2}: "))
+pro_weak_subject3_hour = float(input(f"Enter study time (hours) for {pro_weak_subject3}: "))
+
+pro_weak_dict = {
+    pro_weak_subject1: pro_weak_subject1_hour ,
+    pro_weak_subject2: pro_weak_subject2_hour ,
+    pro_weak_subject3: pro_weak_subject3_hour ,
+}
+
+any_sub_pro_weak = ""
+while any_sub_pro_weak.lower() != "done":
+    any_sub_pro_weak = input("Do you have other subjects: ").capitalize()
+    if any_sub_pro_weak.lower() == "done":
+        break
+    else:
+        any_sub_pro_weak_chosen = input(f"Enter study time for {any_sub_pro_weak}: ")
+
+print("\n")
+for i in pro_weak_dict:
+    print(f"{i}: {pro_weak_dict[i]}")
