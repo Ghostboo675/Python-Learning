@@ -247,7 +247,7 @@ elif points == 0:
 
 
 # Day 1, 2, 3, 4, 5, 6, 7, 8, 9 and 10 (Project: Personal Study Tracker)
-
+# Discontinued
 name_pro_10 = input("Enter your name: ")
 name_pro_10 = name_pro_10.capitalize()
 age_pro_10 = input("Enter your age: ")
@@ -370,3 +370,25 @@ while any_sub_pro_weak.lower() != "done":
 print("\n")
 for i in pro_weak_dict:
     print(f"{i}: {pro_weak_dict[i]}")
+
+
+# 3 weaknesses (Project: Study Session Tracker) (The weaknesses) [while loops][Condition ranges (0–2, 3–5, 6+, etc.)][Nested data (lists/dictionaries inside other data)]
+# Discontinued
+name_q = input("Enter your name: ")
+
+subject_q = ""
+subject_list_q = []
+subject_hours_list_q = []
+
+while subject_q.lower() != "done":
+    subject_q = input("Enter a subject (or 'done' to finish): ").capitalize()
+    if subject_q.lower() == "done":
+        break
+    else:
+        subject_q_hours = float(input("Enter hours studied: "))
+        subject_dict_q = {
+            "Subjects": subject_q , "Hours": subject_q_hours
+        }
+        subject_list_q.append(subject_dict_q)
+
+print(subject_list_q)
