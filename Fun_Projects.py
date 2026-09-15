@@ -392,3 +392,15 @@ while subject_q.lower() != "done":
         subject_list_q.append(subject_dict_q)
 
 print(subject_list_q)
+
+# while and for loops (Project: Study Session Tracker)
+
+subjects = []
+subjects.append(input("Name a subject you do: "))
+
+while subjects[-1] != "done":
+    subjects.append(input("What other subjects do you have (enter done if you don't have anymore): "))
+    if subjects[-1] == "done":
+        subjects.pop(-1)
+
+print(subjects)
