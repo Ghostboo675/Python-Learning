@@ -372,8 +372,9 @@ for i in pro_weak_dict:
     print(f"{i}: {pro_weak_dict[i]}")
 
 
-# 3 weaknesses (Project: Study Session Tracker) (The weaknesses) [while loops][Condition ranges (0–2, 3–5, 6+, etc.)][Nested data (lists/dictionaries inside other data)]
-# Discontinued
+#3 weaknesses (Project: Study Session Tracker) (The weaknesses) [while loops][Condition ranges (0–2, 3–5, 6+, etc.)][Nested data (lists/dictionaries inside other data)]
+#Discontinued
+
 name_q = input("Enter your name: ")
 
 subject_q = ""
@@ -395,12 +396,18 @@ print(subject_list_q)
 
 # while and for loops (Project: Study Session Tracker)
 
-subjects = []
-subjects.append(input("Name a subject you do: "))
+subjects = [input("Name a subject you do: ")]
 
 while subjects[-1] != "done":
     subjects.append(input("What other subjects do you have (enter done if you don't have anymore): "))
     if subjects[-1] == "done":
         subjects.pop(-1)
+        break
 
-print(subjects)
+num = 0
+for x in subjects:
+    num += 1
+    print(f"{num}: {x}")
+
+    if "Python" in x:
+        print(x)
