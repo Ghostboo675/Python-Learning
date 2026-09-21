@@ -394,6 +394,7 @@ while subject_q.lower() != "done":
 
 print(subject_list_q)
 
+
 # while and for loops (Project: Study Session Tracker)
 
 subjects = [input("Name a subject you do: ")]
@@ -411,3 +412,37 @@ for x in subjects:
 
     if "Python" in x:
         print(x)
+
+
+# +=, Calculations & accumulation (Project: Study Hours Calculator)
+
+hours = []
+
+while True:
+    answer = input("How many hours did you study? (Enter done to finish): ")
+
+    if answer.lower() == "done":
+        break
+
+    hours.append(float(answer))
+
+print(hours)
+
+total = 0
+subjects = 0
+longest = hours[0]
+
+for x in hours:
+
+    total += x
+
+    subjects += 1
+
+    if x > longest:
+
+        longest = x
+
+print(total)
+
+print(f"The average hours spent on each subject: {total / subjects}")
+print(f"\n Longest session: {longest}")
