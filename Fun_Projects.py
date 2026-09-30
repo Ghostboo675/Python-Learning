@@ -415,6 +415,7 @@ for x in subjects:
 
 
 # +=, Calculations & accumulation (Project: Study Hours Calculator)
+# discontinued
 
 hours = []
 
@@ -446,3 +447,37 @@ print(total)
 
 print(f"The average hours spent on each subject: {total / subjects}")
 print(f"\n Longest session: {longest}")
+
+
+# (Project: Student Gradebook)
+
+students = []
+
+while True:
+
+    students.append(input("Enter students name (Type done when finished): "))
+
+    if students[-1] == "done":
+
+        students.pop(-1)
+
+        break
+
+first_student = students[0]
+
+student1_subjects = []
+
+print("\n")
+
+while True:
+
+    student1_subjects.append(input(f"What subjects is {first_student} doing: (Type done when you've said them all): "))
+
+    if student1_subjects[-1] == "done":
+
+        student1_subjects.pop(-1)
+
+        break
+
+student1_dict = {"name": students[0],
+                 "subjects": student1_subjects}
